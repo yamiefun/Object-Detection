@@ -1,5 +1,7 @@
 import json
 import cv2
+
+
 # convert relativa coor to absolute coor
 def convert_coor(filename, rel_coor):
     img_name = f'darknet/{filename}'
@@ -42,7 +44,7 @@ def main():
             bbox.append(coor)
             score.append(obj['confidence'])
             lbl = 10 if obj['name'] == '0' else int(obj['name'])
-            label.append(int(obj['name']))
+            label.append(lbl)
         dic['bbox'] = bbox
         dic['score'] = score
         dic['label'] = label
