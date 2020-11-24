@@ -14,7 +14,7 @@ The purpose of this project is to detect house numbers in street view images. Th
     + `make` darknet
     + download weights `yolov4.conv.137`
     + modify network config in `yolov4-custom.cfg`
-2. Note that the number of class should be 10, i.e., number 0 to 9. 
+2. Note that the number of classes should be 10, i.e., number 0 to 9. 
 3. Download training and testing dataset [HERE](https://drive.google.com/drive/u/1/folders/1Ob5oT9Lcmz7g5mVOcYH3QugA7tV3WsSl), and unzip them.
 4. Run `create_train.py`. This script will generate `train.txt` which includes all images' name and path. Also, it'll create independent `txt` files with label information in it for every training image. Then you should move all datas needed for training to correct path mentioned in [README](https://github.com/AlexeyAB/darknet#yolo-v4-v3-and-v2-for-windows-and-linux).
 5. Now you can train your custom yolov4 model.
