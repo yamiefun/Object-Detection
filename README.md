@@ -24,7 +24,7 @@ The purpose of this project is to detect house numbers in street view images. Th
 
 
 ## Result
-Best mAP so far: 0.43944
+Best mAP so far: 0.50841
 ## Reference
 + [data parsing](https://github.com/pavitrakumar78/Street-View-House-Numbers-SVHN-Detection-and-Classification-using-CNN/blob/master/construct_datasets.py)
 + [darknet](https://github.com/AlexeyAB/darknet)
